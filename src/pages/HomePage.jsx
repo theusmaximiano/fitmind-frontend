@@ -4,13 +4,18 @@ import HistoryIcon from "@mui/icons-material/History";
 import InfoIcon from "@mui/icons-material/Info";
 import LocalDrinkIcon from "@mui/icons-material/LocalDrink";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
+import { useNavigate } from "react-router-dom"; 
 
 export default function HomePage() {
+  const navigate = useNavigate(); 
   return (
     <Box
       sx={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #7b2ff7, #f107a3)",
+         backgroundImage: `
+          linear-gradient(rgba(247, 47, 47, 0.7), rgba(0, 0, 0, 0.7)),
+          url('/assets/imagem.png')
+        `,
         color: "#fff",
       }}
     >
@@ -24,7 +29,7 @@ export default function HomePage() {
         </Toolbar>
       </AppBar>
 
-      {/* Conteúdo */}
+      {/* Conteúdo */}0
       <Box textAlign="center" mt={6}>
         <Typography variant="h4" fontWeight="bold" gutterBottom>
           Bem-vindo à FitMind!
@@ -46,6 +51,7 @@ export default function HomePage() {
               color="secondary"
               startIcon={<FitnessCenterIcon />}
               sx={{ py: 2, fontWeight: "bold", borderRadius: 3 }}
+               onClick={() => navigate("/training")} 
             >
               Criar Novo Treino
             </Button>
@@ -80,6 +86,7 @@ export default function HomePage() {
                 borderRadius: 3,
                 fontWeight: "bold",
               }}
+              onClick={() => navigate("/about")}
             >
               Como Funciona
             </Button>
@@ -96,6 +103,7 @@ export default function HomePage() {
                 "&:hover": { backgroundColor: "#26c6da" },
                 borderRadius: 3,
                 fontWeight: "bold",
+                
               }}
             >
               Monitore Sua Água

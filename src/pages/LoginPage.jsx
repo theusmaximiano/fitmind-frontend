@@ -18,10 +18,15 @@ export default function LoginPage() {
     }
   };
 
-  return (
+    return (
     <Box
       sx={{
-        background: "linear-gradient(135deg, #7b2ff7, #f107a3)",
+        backgroundImage: `
+          linear-gradient(rgba(247, 47, 47, 0.7), rgba(0, 0, 0, 0.7)),
+          url('/assets/imagem.png')
+        `,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         height: "100vh",
         display: "flex",
         alignItems: "center",
