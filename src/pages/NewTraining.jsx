@@ -4,22 +4,14 @@ import HistoryIcon from "@mui/icons-material/History";
 import InfoIcon from "@mui/icons-material/Info";
 import LocalDrinkIcon from "@mui/icons-material/LocalDrink";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
-import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
-  const navigate = useNavigate();
   return (
     <Box
       sx={{
         minHeight: "100vh",
-        backgroundImage: `
-  linear-gradient(rgba(247, 47, 47, 0.7), rgba(0, 0, 0, 0.7)),
-  url('/assets/imagem.png')
-`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundBlendMode: "overlay",
+        background: "linear-gradient(135deg, #7b2ff7, #f107a3)",
+        color: "#fff",
       }}
     >
       {/* Barra superior */}
@@ -31,7 +23,8 @@ export default function HomePage() {
           <Button color="inherit">Sair</Button>
         </Toolbar>
       </AppBar>
-      {/* Conteúdo */}0
+
+      {/* Conteúdo */}
       <Box textAlign="center" mt={6}>
         <Typography variant="h4" fontWeight="bold" gutterBottom>
           Bem-vindo à FitMind!
@@ -39,6 +32,7 @@ export default function HomePage() {
         <Typography variant="subtitle1" mb={4}>
           Escolha uma das opções abaixo:
         </Typography>
+
         <Grid
           container
           spacing={3}
@@ -52,7 +46,6 @@ export default function HomePage() {
               color="secondary"
               startIcon={<FitnessCenterIcon />}
               sx={{ py: 2, fontWeight: "bold", borderRadius: 3 }}
-              onClick={() => navigate("/training")}
             >
               Criar Novo Treino
             </Button>
@@ -82,12 +75,11 @@ export default function HomePage() {
               startIcon={<InfoIcon />}
               sx={{
                 py: 2,
-                backgroundColor: "#1900ffff",
-                "&:hover": { backgroundColor: "#2d0087ff" },
+                backgroundColor: "#f50057",
+                "&:hover": { backgroundColor: "#ff4081" },
                 borderRadius: 3,
                 fontWeight: "bold",
               }}
-              onClick={() => navigate("/about")}
             >
               Como Funciona
             </Button>
