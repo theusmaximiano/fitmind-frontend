@@ -65,15 +65,20 @@ export default function TrainingPage() {
       }
 
       const data = await response.json();
-      setRespostaIA(data.response || "Sem resposta da IA");
-    } catch (error) {
-      console.error(error);
-      setRespostaIA(
-        "❌ Erro ao obter resposta do Treinador IA. Verifique o backend ou a conexão."
-      );
-    }
+      const treinoGerado = data.response || "Sem resposta da IA";
+      setRespostaIA(treinoGerado);
 
-    setLoading(false);
+      // Salva localmente para o histórico
+      localStorage.setItem("treinoGerado", treinoGerado);
+
+      // Redireciona para a tela de histórico
+      navigate("/history");
+    } catch (error) {
+      console.error("Erro ao gerar treino:", error);
+      alert("Ocorreu um erro ao gerar o treino. Tente novamente.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -163,6 +168,8 @@ export default function TrainingPage() {
             sx={{
               mt: 2,
               py: 1.5,
+              fontSize: "16px",
+              fontWeight: "bold",
               backgroundColor: "#7b2ff7",
               "&:hover": { backgroundColor: "#9c4ef7" },
             }}

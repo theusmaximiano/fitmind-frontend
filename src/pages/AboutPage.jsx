@@ -32,7 +32,7 @@ export default function AboutPage() {
         }}
       >
         <Typography variant="h4" mb={3} fontWeight="bold">
-          Sobre o FitMax 🧠💪
+          Sobre o FitMind 🧠💪
         </Typography>
 
         <Typography variant="body1" mb={2} sx={{ textAlign: "justify" }}>

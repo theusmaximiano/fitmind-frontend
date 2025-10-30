@@ -37,10 +37,10 @@ export default function HomePage() {
 
       {/* Conteúdo */}
       <Box textAlign="center" mt={6}>
-        <Typography variant="h4" fontWeight="bold" gutterBottom>
+        <Typography variant="h4" fontWeight="bold" color="white" gutterBottom>
           Bem-vindo à FitMind!
         </Typography>
-        <Typography variant="subtitle1" mb={4}>
+        <Typography variant="subtitle1" color="white"  mb={4}>
           Escolha uma das opções abaixo:
         </Typography>
 
@@ -118,7 +118,7 @@ export default function HomePage() {
           </Grid>
 
           <Grid item xs={12}>
-            <Button
+           {/* <Button
               fullWidth
               variant="contained"
               startIcon={<RestaurantIcon />}
@@ -132,7 +132,7 @@ export default function HomePage() {
               onClick={() => navigate("/food")}
             >
               Sugestão de Alimentação
-            </Button>
+            </Button>*/}
           </Grid>
         </Grid>
       </Box>
