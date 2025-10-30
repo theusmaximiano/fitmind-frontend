@@ -32,26 +32,28 @@ export default function AboutPage() {
         }}
       >
         <Typography variant="h4" mb={3} fontWeight="bold">
-          Sobre o FitMind 🧠💪
+          Sobre o FitMax 🧠💪
         </Typography>
 
         <Typography variant="body1" mb={2} sx={{ textAlign: "justify" }}>
-          O FitMind é uma aplicação inovadora para pessoas que focam no bem estar da saúde e modo de vida fitness,
-          que combina tecnologia e inteligência artificial para criar treinos
-          personalizados de acordo com seus objetivos, tipo de treino, nível físico
-          e duração desejada.
+          O FitMind é uma aplicação inovadora para pessoas que focam no bem
+          estar da saúde e modo de vida fitness, que combina tecnologia e
+          inteligência artificial para criar treinos personalizados de acordo
+          com seus objetivos, tipo de treino, nível físico e duração desejada.
         </Typography>
 
         <Typography variant="body1" mb={2} sx={{ textAlign: "justify" }}>
-          Com a integração da API Gemini, o FitMind gera planos de treino adequados,
-          detalhados e adaptados a necessidade do usuário, incluindo séries, repetições e intervalos
-          de descanso. Além disso, oferece funcionalidades como monitoramento de água,
-          sugestões de alimentação e histórico de treinos.
+          Com a integração da API Gemini, o FitMind gera planos de treino
+          adequados, detalhados e adaptados a necessidade do usuário, incluindo
+          séries, repetições e intervalos de descanso. Além disso, oferece
+          funcionalidades como monitoramento de água, sugestões de alimentação e
+          histórico de treinos.
         </Typography>
 
         <Typography variant="body1" mb={4} sx={{ textAlign: "justify" }}>
-          A missão do FitMind é unir a saúde e a tecnologia para proporcionar uma experiência única para cada usuário,
-          priorizando a satisfação do cliente.
+          A missão do FitMind é unir a saúde e a tecnologia para proporcionar
+          uma experiência única para cada usuário, priorizando a satisfação do
+          cliente.
         </Typography>
 
         <Button

@@ -8,12 +8,7 @@ import {
   MenuItem,
   CircularProgress,
 } from "@mui/material";
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useNavigate } from "react-router-dom";
-
-// Substitua pela sua nova chave ativa do Gemini
-const API_KEY = "......";
-const genAI = new GoogleGenerativeAI(API_KEY);
 
 export default function TrainingPage() {
   const [formData, setFormData] = useState({
@@ -34,7 +29,12 @@ export default function TrainingPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.objetivo || !formData.tipo || !formData.nivel || !formData.duracao) {
+    if (
+      !formData.objetivo ||
+      !formData.tipo ||
+      !formData.nivel ||
+      !formData.duracao
+    ) {
       alert("Preencha todos os campos!");
       return;
     }
@@ -43,8 +43,6 @@ export default function TrainingPage() {
     setRespostaIA("");
 
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
       const prompt = `
       Crie um plano de treino personalizado com base nas seguintes informações:
       - Objetivo: ${formData.objetivo}
@@ -54,13 +52,25 @@ export default function TrainingPage() {
       O retorno deve ser motivacional e descritivo, com exercícios, séries e descansos.
       `;
 
-      const result = await model.generateContent(prompt);
-      const text = result.response.text();
+      const response = await fetch("http://127.0.0.1:8000/generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt }),
+      });
 
-      setRespostaIA(text);
+      if (!response.ok) {
+        throw new Error("Erro ao conectar com o backend");
+      }
+
+      const data = await response.json();
+      setRespostaIA(data.response || "Sem resposta da IA");
     } catch (error) {
       console.error(error);
-      setRespostaIA("Erro ao obter resposta do Treinador IA. Verifique sua chave.");
+      setRespostaIA(
+        "❌ Erro ao obter resposta do Treinador IA. Verifique o backend ou a conexão."
+      );
     }
 
     setLoading(false);
@@ -106,6 +116,7 @@ export default function TrainingPage() {
             value={formData.objetivo}
             onChange={handleChange}
           />
+
           <TextField
             select
             label="Tipo de treino"
@@ -120,6 +131,7 @@ export default function TrainingPage() {
             <MenuItem value="resistencia">Resistência</MenuItem>
             <MenuItem value="hipertrofia">Hipertrofia</MenuItem>
           </TextField>
+
           <TextField
             select
             label="Nível físico"
@@ -133,6 +145,7 @@ export default function TrainingPage() {
             <MenuItem value="intermediario">Intermediário</MenuItem>
             <MenuItem value="avancado">Avançado</MenuItem>
           </TextField>
+
           <TextField
             label="Duração (minutos)"
             name="duracao"
@@ -142,6 +155,7 @@ export default function TrainingPage() {
             value={formData.duracao}
             onChange={handleChange}
           />
+
           <Button
             type="submit"
             fullWidth
@@ -154,7 +168,11 @@ export default function TrainingPage() {
             }}
             disabled={loading}
           >
-            {loading ? <CircularProgress size={24} color="inherit" /> : "Gerar Treino com IA"}
+            {loading ? (
+              <CircularProgress size={24} color="inherit" />
+            ) : (
+              "Gerar Treino com IA"
+            )}
           </Button>
         </form>
 

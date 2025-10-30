@@ -8,14 +8,15 @@ import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   const navigate = useNavigate();
+
   return (
     <Box
       sx={{
         minHeight: "100vh",
         backgroundImage: `
-  linear-gradient(rgba(247, 47, 47, 0.7), rgba(0, 0, 0, 0.7)),
-  url('/assets/imagem.png')
-`,
+          linear-gradient(rgba(247, 47, 47, 0.7), rgba(0, 0, 0, 0.7)),
+          url('/assets/imagem.png')
+        `,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -28,10 +29,13 @@ export default function HomePage() {
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             FitMind 🧠💪
           </Typography>
-          <Button color="inherit">Sair</Button>
+          <Button color="inherit" onClick={() => navigate("/")}>
+            Sair
+          </Button>
         </Toolbar>
       </AppBar>
-      {/* Conteúdo */}0
+
+      {/* Conteúdo */}
       <Box textAlign="center" mt={6}>
         <Typography variant="h4" fontWeight="bold" gutterBottom>
           Bem-vindo à FitMind!
@@ -39,6 +43,7 @@ export default function HomePage() {
         <Typography variant="subtitle1" mb={4}>
           Escolha uma das opções abaixo:
         </Typography>
+
         <Grid
           container
           spacing={3}
@@ -70,6 +75,7 @@ export default function HomePage() {
                 borderRadius: 3,
                 fontWeight: "bold",
               }}
+              onClick={() => navigate("/history")}
             >
               Ver Histórico
             </Button>
@@ -105,6 +111,7 @@ export default function HomePage() {
                 borderRadius: 3,
                 fontWeight: "bold",
               }}
+              onClick={() => navigate("/water")}
             >
               Monitore Sua Água
             </Button>
@@ -122,6 +129,7 @@ export default function HomePage() {
                 borderRadius: 3,
                 fontWeight: "bold",
               }}
+              onClick={() => navigate("/food")}
             >
               Sugestão de Alimentação
             </Button>
