@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+O FitMind é um aplicativo inteligente que utiliza Inteligência Artificial para ajudar o usuário a criar protocolos de treino personalizados, de acordo com sua necessidade
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+───────────────────────────────
 
-## Available Scripts
+📋 Sumário
 
-In the project directory, you can run:
+Sobre o Projeto
 
-### `npm start`
+Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Instalação e Execução
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Como Usar
 
-### `npm test`
+───────────────────────────────
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🏋️‍♂️ Sobre o Projeto
+O FitMind nasceu da ideia de unir saúde física e tecnologia.
+Com o auxílio de IA, o sistema analisa dados do usuário e gera um plano de treino inteligente, adaptando os exercícios conforme o progresso e os objetivos pessoais.
 
-### `npm run build`
+Principais recursos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Recomendação personalizada de treinos via IA
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Interface interativa e responsiva
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Armazenamento seguro de dados do usuário
 
-### `npm run eject`
+───────────────────────────────
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🛠️ Tecnologias Utilizadas
+O projeto foi desenvolvido com as seguintes tecnologias:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React.js — Framework principal do frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+JavaScript (ES6+) — Lógica da aplicação
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+CSS3 — Estilização responsiva e moderna
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+───────────────────────────────
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⚙️ Instalação e Execução
 
-### Code Splitting
+Pré-requisitos
+Antes de começar, certifique-se de ter instalado:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Node.js
 
-### Analyzing the Bundle Size
+Git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Passos
 
-### Making a Progressive Web App
+git clone https://github.com/theusmaximiano/fitmind-frontend.git
+cd "Pasta que o projeto for instalado"
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+───────────────────────────────
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+💡 Como Usar
 
-### Deployment
+Abra o app no navegador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Escreva o grupo Muscular que deseja treinar 
+Informe seu objetivo (emagrecer, hipertrofia, resistência, etc).
 
-### `npm run build` fails to minify
+Selecione seu nível de experiência.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A IA irá gerar um protocolo de treino personalizado.
+
+Ajuste conforme necessário e acompanhe seu progresso.
+
+
+
+───────────────────────────────
+👨‍💻 Autor
+Desenvolvido por Matheus Maximiano e Leonardo Zanardi
+
+───────────────────────────────
+
+👨‍💻 Autor
+Desenvolvido com 💙 por Seu Nome Aqui
