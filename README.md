@@ -14,7 +14,7 @@ Como Usar
 
 ───────────────────────────────
 
-🏋️‍♂️ Sobre o Projeto
+🏋️‍♂️ Sobre o Projeto:
 O FitMind nasceu da ideia de unir saúde física e tecnologia.
 Com o auxílio de IA, o sistema analisa dados do usuário e gera um plano de treino inteligente, adaptando os exercícios conforme o progresso e os objetivos pessoais.
 
@@ -28,7 +28,7 @@ Armazenamento seguro de dados do usuário
 
 ───────────────────────────────
 
-🛠️ Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas:
 O projeto foi desenvolvido com as seguintes tecnologias:
 
 React.js — Framework principal do frontend
@@ -40,7 +40,7 @@ CSS3 — Estilização responsiva e moderna
 
 ───────────────────────────────
 
-⚙️ Instalação e Execução
+⚙️ Instalação e Execução:
 
 Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
@@ -59,7 +59,7 @@ npm start
 
 ───────────────────────────────
 
-💡 Como Usar
+💡 Como Usar:
 
 Abra o app no navegador.
 
@@ -75,10 +75,8 @@ Ajuste conforme necessário e acompanhe seu progresso.
 
 
 ───────────────────────────────
-👨‍💻 Autor
+👨‍💻 Autor:
 Desenvolvido por Matheus Maximiano e Leonardo Zanardi
 
 ───────────────────────────────
 
-👨‍💻 Autor
-Desenvolvido com 💙 por Seu Nome Aqui
