@@ -46,17 +46,12 @@ JavaScript (ES6+) — Lógica da aplicação
 
 CSS3 — Estilização responsiva e moderna
 
-Backend
+Backend - FastApi
 
 Node.js — Ambiente de execução JavaScript
 
-Express.js — Framework para criação da API
+Sqlite - Banco de dados
 
-MongoDB (ou MySQL, dependendo do seu caso) — Banco de dados
-
-JWT — Autenticação de usuários
-
-OpenAI API (ou outro modelo de IA) — Geração de treinos inteligentes
 
 ───────────────────────────────
 
@@ -118,7 +113,7 @@ Ajuste conforme necessário e acompanhe seu progresso.
 O backend do FitMind é responsável por gerenciar a lógica da aplicação, autenticação, comunicação com o banco de dados e integração com a Inteligência Artificial.
 
 Repositório do backend:
-👉 [FitMind Backend - GitHub](https://github.com/theusmaximiano/ProjectApiGemini)
+👉 https://github.com/theusmaximiano/ProjectApiGemini
 
 ───────────────────────────────
 
