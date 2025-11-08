@@ -117,7 +117,7 @@ Repositório do backend:
 
 ───────────────────────────────
 
-👨‍💻 Autores
+👨‍💻 
 Desenvolvido por
 Matheus Maximiano
 e Leonardo Zanardi
