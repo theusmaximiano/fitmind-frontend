@@ -69,8 +69,11 @@ Passos
 Frontend
 
 git clone https://github.com/theusmaximiano/fitmind-frontend.git
+
 cd "fitmind-frontend"
+
 npm install
+
 npm start
 
 
