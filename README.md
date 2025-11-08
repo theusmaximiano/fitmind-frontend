@@ -91,7 +91,7 @@ uvicorn main:app --reload
 
 💡 Como Usar
 
-Inicie o backend com o comando npm start.
+Inicie o backend com o comando uvicorn main:app .
 
 Em seguida, inicie o frontend com npm start.
 
